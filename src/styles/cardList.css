@@ -1,0 +1,50 @@
+.card-list {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px grey;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.description {
+  padding: 1em 1em 0;
+  text-align: left;
+}
+.list-img img {
+  height: 200px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+#city {
+  width: fit-content;
+  color: #4d7c0f;
+  background-color: #ecfccb;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0.4em 0.7em;
+  margin-bottom: 1em;
+}
+#city i {
+  margin-right: 5px;
+}
+#name {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 0.5em;
+}
+#desc {
+  color: #7d828b;
+}
+
+.rate-list {
+  width: fit-content;
+  align-self: flex-end;
+  background-color: #fef9c3;
+  color: #facc15;
+  border-radius: 0 0 8px 0;
+  margin-top: 1em;
+  padding: 0.5em 0.5em 0.5em 1em;
+}

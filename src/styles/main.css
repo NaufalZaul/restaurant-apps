@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a,
+button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a3e635;
+  z-index: 99;
+}
+
+nav a {
+  padding: 1em 0.5em;
+}
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  margin: 0.2em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ea580c;
+  color: #fff;
+  z-index: 999;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+  z-index: 99;
+}
+
+.brand-logo,
+.brand-name {
+  margin: 0.2em;
+  font-size: 25px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navigation li {
+  margin: 1em;
+  font-size: 18px;
+}
+
+.navigation a {
+  position: relative;
+}
+
+.navigation a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -2px;
+  background-color: #000;
+  transition: width 0.5s;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+.nav-menu {
+  margin: auto 2em;
+  display: none;
+  z-index: 99;
+}
+
+.nav-menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 1em;
+  font-size: 18px;
+}
+
+.jumbotron {
+  /* background-image: image-set(
+    url("../public/images/heros/hero-image_2_small.jpg") 420w,
+    url("../public/images/heros/hero-image_2.jpg") 800w
+  ); */
+  /* background-image: url("../../dist/images/heros/hero-image_2-large.jpg"); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-jumbotron {
+  aspect-ratio: 2/1;
+  padding: 0 7em;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: brightness(0.5);
+}
+
+.title-jumbotron {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+}
+
+.sub-title {
+  font-size: 25px;
+}
+/* content */
+#main {
+  padding: 3rem;
+}
+.title-content {
+  margin: 0 2rem 2rem;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 18em);
+  gap: 2rem;
+  justify-content: space-around;
+}
+.favorite {
+  width: fit-content;
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.favorite-active {
+  background-color: #fef9c3;
+  color: #facc15;
+}
+
+/* footer */
+
+footer {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #a3e635;
+}
+
+.creator p {
+  margin: 1em 0;
+  font-size: 18px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foo-brand {
+  margin: 0;
+}
+
+.partners i {
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .show {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 3em 0 2em;
+    background-color: #fffbeb;
+  }
+
+  .top-jumbotron {
+    padding: 0 3em;
+  }
+
+  .title-jumbotron {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  .title-menu {
+    font-size: 25px;
+  }
+
+  .data-menu {
+    flex-direction: column;
+  }
+
+  .img-menu {
+    width: 80%;
+    min-height: 150px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+  .partners {
+    margin: 2em 0;
+  }
+  .partners i {
+    padding-left: 0em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .jumbotron {
+    /* background-image: url("../../dist/images/heros/hero-image_2-small.jpg"); */
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .img-menu {
+    width: 95%;
+    min-height: auto;
+    margin-bottom: 1em;
+  }
+  .title-jumbotron {
+    font-size: 20px;
+  }
+  .sub-title {
+    font-size: 12px;
+  }
+}

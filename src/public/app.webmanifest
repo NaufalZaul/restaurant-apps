@@ -1,0 +1,54 @@
+{
+  "id": "restaurant-apps",
+  "start_url": "./index.html",
+  "name": "Restaurant Apps",
+  "short_name": "restaurant",
+  "description": "You can go to other restaurant",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#DB0000",
+  "icons": [
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-480.png",
+      "type": "image/png",
+      "sizes": "480x480",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-720.png",
+      "type": "image/png",
+      "sizes": "720x720",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo/icons8-endomondo-old-logo-240.png",
+      "type": "image/png",
+      "sizes": "240x240",
+      "purpose": "any"
+    }
+  ]
+}
